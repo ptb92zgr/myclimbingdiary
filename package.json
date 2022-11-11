@@ -2,10 +2,13 @@
   "name": "mcd",
   "version": "1.0.0",
   "description": "Climbing logbook",
-  "main": "src index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patryk Janicki",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
 }
