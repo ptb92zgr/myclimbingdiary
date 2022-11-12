@@ -1,0 +1,15 @@
+<%- include('partials/header') -%>
+
+<% if (name) { %>
+<h2>Kraj który wybrałeś to: <%= name %></h2>
+<% } else { %>
+    <h3>Nie ma takiego kraju</h3>
+<% } %>
+
+<ul>
+    <% findCountry.forEach(country => { %>
+    <li><a href="/country/<%= countries.slug %>"><%= countries.name %></a></li>
+<% }) %>
+</ul>
+
+<%- include('partials/footer') -%>
